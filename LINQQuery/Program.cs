@@ -17,7 +17,7 @@ namespace LINQQuery
             IEnumerable<string> thewhys =
                 from line in lines 
                 where line.Contains('Y')
-                select line.Trim().Split()[0].ToUpper();
+                select line.Trim().Split()[0].ToRandomCase();
 
 
             Console.WriteLine(linesin30);

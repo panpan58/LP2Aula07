@@ -6,8 +6,7 @@ namespace ExtendString
     {
         static void Main(string[] args)
         {
-           string B = "yeeeeeee";
-            Console.WriteLine(StringExtensions.ToRandomCase(B));
+            Console.WriteLine(args[0].ToRandomCase());
         }
     }
 }

@@ -15,15 +15,15 @@ namespace ExtendString
         }
         public static string ToRandomCase (this string s)
         {
-            var aux = new StringBuilder();
+            StringBuilder sb = new StringBuilder();
             foreach(char c in s)
             {
                 if(rnd.Next(0,2) == 1)
-                    aux.Append(Char.ToUpper(c));
+                    sb.Append(Char.ToUpper(c));
                 else
-                    aux.Append(Char.ToLower(c));
+                    sb.Append(Char.ToLower(c));
             }
-            return aux.ToString();
+            return sb.ToString();
         }
     }
 }
